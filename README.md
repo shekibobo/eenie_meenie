@@ -1,6 +1,6 @@
 # EenieMeenie
 
-TODO: Write a gem description
+Adds the `#eenie_meenie` method for randomized selection to all enumerables.
 
 ## Installation
 
@@ -20,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+array = %(josh erin sandy jason mary)
+
+array.eenie_meenie
+# => "josh"
+
+array.eenie_meenie(picker: :my_mother)
+# => "mary"
+
+array.eenie_meenie(picker: :my_mother, exclusion: true)
+# => "erin"
+```
 
 ## Contributing
 
@@ -29,3 +40,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## Credits
+
+Inspired by [@laserlemon](https://www.github.com/laserlemon)'s [fair_dice_roll](https://www.github.com/laserlemon/fair_dice_roll).
