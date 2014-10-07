@@ -7,12 +7,7 @@ module Enumerable
       words += exclusion ? EenieMeenie::MOTHER_EXCLUSION_STEPS : EenieMeenie::MOTHER_SINGLE_SELECT_STEPS
     end
 
-    choice_word =
-      if picker == :my_mother
-        exclusion ? 'game' : 'it'
-      else
-        'mo'
-      end
+    choice_word = words.last
 
     if exclusion
       remaining = self.dup
