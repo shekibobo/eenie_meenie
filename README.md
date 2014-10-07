@@ -44,3 +44,7 @@ array.eenie_meenie(picker: :my_mother, exclusion: true)
 ## Credits
 
 Inspired by [@laserlemon](https://www.github.com/laserlemon)'s [fair_dice_roll](https://www.github.com/laserlemon/fair_dice_roll).
+
+## TODO
+
+Make sure it works with more than just arrays.
